@@ -1,0 +1,264 @@
+#contact_reserv{
+	width: 100%;
+	height: 100vh;
+	background:#eaeef0;  
+	padding-top: 80px;
+	position: relative;
+}
+.continer-cont-ani{
+	width: 100%;
+/*	height: 100vh;*/
+	position: relative;
+/*	top: 400px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 100px 0px ;
+	padding: 50px 0px;
+	overflow: hidden;
+/*	height: 300px;*/
+	
+}
+.ani-continer{
+	width: 700px;
+/*	height: 1400px;*/
+	height: 200px;
+	position: relative;
+	
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px ;
+	border-radius: 30px;
+	transition:all 1s ease;
+}
+.ani{
+	width: 700px;
+	height: 1400px;
+	background: linear-gradient(#42abff , #ff4fe8,#ffeb3b );
+	
+	margin:200px auto;
+	padding: 50px;
+	position: absolute;
+	animation: animateCont 3.5s linear infinite;
+}
+@keyframes animateCont{
+	0%{
+		transform: translateY(-1500px);
+	}
+	100%{
+		transform: translateY(1400px);
+	}
+}
+.cont{
+	width: 600px;
+/*	height: 1300px;*/
+	height: 150px;
+	background:#282828;
+	position: absolute;
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	padding: 30px;
+	overflow: hidden;
+	transition:all 1s ease;
+}
+
+
+/*---contact---*/
+
+.cont form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+/*	color: #eaeef0;*/
+	color: #ffff;
+}
+.cont form h1{
+	font-size: 70px;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+	font-family: 'Barlow', sans-serif;
+	margin: 0 0 10px 0 ;
+}
+.cont form input{
+	
+	width: 60%;
+	padding: 20px;
+	
+}
+.cont form input , .cont form textarea{
+	background: white;
+	margin-top: 30px;
+	padding: 20px;
+	font-size: 38px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	font-family: 'Ubuntu', sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	text-transform: capitalize;
+} 
+.cont form textarea{
+	width: 100%;
+	height: 250px;
+	resize: none;
+}
+.cont form .continer-sub-res{
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.cont form .sub-btn{
+	width: 70%;
+	height: 60px;
+	padding: 0 0 3px 0;
+	border: none;
+	outline: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Barlow', sans-serif;
+	border-radius: 600px;
+	background:#42abff;
+	letter-spacing: 2px;
+}
+.cont form .continer-sub-res .res-btn{
+	width: 25%;
+	height: 60px;
+	padding: 0 0 3px 0;
+	border: none;
+	outline: none;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Barlow', sans-serif;
+	border-radius: 600px;
+	background: #42abff ;
+	letter-spacing: 2px;
+}
+/*#42abff, #ff4fe8,#ffeb3b*/
+.cont .cont-icon{
+	width: 100%;
+	height: 100px;
+	margin-top: 180px;
+	
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 65px;
+	color: white;
+	
+}
+
+/* on contact */
+#contact_reserv .loader{
+	position: absolute;
+	display: flex;
+	padding: 10px 0 0 10px;
+	z-index: 23;
+	top: 90px;
+	left: 1px;
+}
+#contact_reserv .loader span{
+	position: relative;
+	width: 230px;
+	height: 230px;
+	background: #eaeef0;
+	border: 6px solid #eaeef0; 
+	border-radius: 50%;
+	box-shadow: -8px -8px 15px rgba(255,255,255,1),
+	8px 8px  25px rgba(0,0,0,0.15);
+	overflow: hidden;
+	
+}
+#contact_reserv .loader span::before{
+	content: '';
+	position: absolute;
+	inset:0;
+	border-radius: 50%;
+	box-shadow: inset 10px 10px 20px rgba(0,0,0,0.5) , inset -5px -5px 15px rgba(255,255,255,1);
+}
+#contact_reserv .loader span::after{
+	content: '';
+	position: absolute;
+	inset:40px;
+	background: #eaeef0;
+	border: 3px solid #eaeef0; 
+	border-radius: 50%;
+	box-shadow: -8px -8px 25px rgba(255,255,255,1), 8px 8px 25px rgba(0,0,0,0.25),inset 3px 3px 10px rgba(0,0,0,0.15),inset -1px -1px 15px rgba(255,255,255,1)
+}
+
+#contact_reserv .loader span i{
+	position: absolute;
+	inset:0;
+	filter: blur(5px);
+	border-radius: 50%;
+	background: linear-gradient(#42abff , #ff4fe8,#ffeb3b );
+	animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/*icon*/
+
+#contact_reserv .food-icon{
+	position: absolute;
+	inset:50px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	overflow:hidden;*/
+	color: #ff518c;
+	font-size: 4em;
+	width: 150px;
+	height: 150px;	
+	transition: all 1s ease;
+	opacity: 1;
+	
+}
+#contact_reserv #iconDown{
+	display: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
